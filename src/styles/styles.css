@@ -105,12 +105,12 @@
 /*EXPERIENCE*/
 .experience-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.25fr 0.75fr 0.75fr 1.25fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  'div-1 div-2 div-2'
-  'div-4 div-4 div-3'
-  'div-5 div-6 div-6';
+  'div-1 div-2 div-2 div-2'
+  'div-5 div-5 div-4 div-3'
+  'div-6 div-7 div-7 div-7';
 }
 .div-1{
   grid-area: div-1;
@@ -123,6 +123,8 @@
 }
 .div-4{
   grid-area: div-4;
+  align-self: center;
+  text-align: center;
 }
 .div-5{
   grid-area: div-5;
@@ -130,7 +132,10 @@
 .div-6{
   grid-area: div-6;
 }
-.div-1, .div-2, .div-3, .div-4, .div-5, .div-6{
+.div-7{
+  grid-area: div-7;
+}
+.div-1, .div-2, .div-3, .div-7, .div-5, .div-6{
   background-color: var(--dark-color);
   color:var(--white-color);
   padding:var(--large-size);
@@ -165,9 +170,12 @@
   'div-1'
   'div-2'
   'div-3'
-  'div-4'
   'div-5'
-  'div-6';
+  'div-6'
+  'div-7';
+}
+.div-4{
+  display:none;
 }
 /*HERO-BANNER*/
 .hero-banner{

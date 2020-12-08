@@ -1,0 +1,144 @@
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  padding:var(--large-size) var(--large-size);
+  margin: 0px auto;
+  max-width: var(--body-width);
+}
+.container-no-padding{
+  padding:var(--large-size) 0px;
+  margin: 0px auto;
+  max-width: var(--body-width);
+}
+.small-container{
+  padding:var(--medium-size) var(--medium-size);
+  margin: var(--medium-size);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  flex: 1;
+}
+.shadow{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dark-background{
+  background-color: var(--dark-color);
+  color:var(--white-color);
+}
+
+.gray-background{
+  background-color: var(--gray-color);
+}
+
+.center{
+  text-align: center;
+}
+.small-margin{
+  margin-bottom: var(--small-size);
+}
+
+
+
+/*HEADER*/
+.header{
+  border-bottom: 1px solid var(--primary-color);
+}
+
+/*HERO-BANNER*/
+.hero-banner{
+  min-height: 80vh;
+  background-color: var(--gray-color);
+}
+
+
+/*BOXES-SECTION*/
+.boxes{
+  display: flex;
+  width:100%
+}
+
+/*FOOTER*/
+.footer-cr{
+  font-size: 0.75rem;
+}
+
+.footer{
+  padding: var(--small-size);
+}
+
+/*EXPERIENCE*/
+.experience-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  'div-1 div-2 div-2'
+  'div-4 div-4 div-3'
+  'div-5 div-6 div-6';
+}
+
+.div-1{
+  grid-area: div-1;
+}
+.div-2{
+  grid-area: div-2;
+}
+.div-3{
+  grid-area: div-3;
+}
+.div-4{
+  grid-area: div-4;
+}
+.div-5{
+  grid-area: div-5;
+}
+.div-6{
+  grid-area: div-6;
+}
+
+.div-1, .div-2, .div-3, .div-4, .div-5, .div-6{
+  background-color: var(--dark-color);
+  color:var(--white-color);
+  padding:var(--large-size);
+  margin:var(--medium-size);
+
+}
+
+.light-background-span{
+  background-color: var(--white-color);
+  padding: var(--small-size);
+}
+
+.small-span{
+  font-size: .85rem;
+}
+
+@media (max-width: 768px){
+  /*GENERAL*/
+  .container{
+    padding:var(--medium-size) var(--medium-size);
+  }
+  .wrapper {
+      flex-direction: column;
+  }
+  /*BOXES-SECTION*/
+  .boxes {
+    flex-direction: column;
+  }
+  /*EXPERIENCE*/
+.experience-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  'div-1'
+  'div-2'
+  'div-3'
+  'div-4'
+  'div-5'
+  'div-6';
+}
+}

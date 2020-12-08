@@ -1,0 +1,20 @@
+:root {
+  /*typography*/
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins', sans-serif;
+
+  /*colors*/
+  --white-color:#fff;
+  --gray-color:#fbfbfb;
+  --primary-color: #d32339;
+  --dark-color:#252525;
+
+
+  /*sizes*/
+  --base: 0.25rem;
+  --body-width: 70rem;
+  --small-size:calc(var(--base) * 2);
+  --medium-size:calc(var(--base) * 4);
+  --big-size:calc(var(--base) * 8);
+  --large-size:calc(var(--base) * 12);
+}

@@ -51,6 +51,21 @@
 .header{
   border-bottom: 2px solid var(--primary-color);
 }
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: var(--medium-size) var(--medium-size);
+}
+.x-small-span{
+  font-size: .75rem
+}
+.x-small-icon{
+  vertical-align: middle;
+}
+.nav-link{
+  margin-right: var(--medium-size);
+}
 /*HERO-BANNER*/
 .hero-banner{
   display: flex;

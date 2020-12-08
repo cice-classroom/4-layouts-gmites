@@ -1,12 +1,12 @@
 :root {
   /*typography*/
-  --title-font: 'Poppins', sans-serif;
-  --body-font: 'Poppins', sans-serif;
+  --title-font: 'Open Sans', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
 
   /*colors*/
-  --white-color:#fff;
-  --gray-color:#fbfbfb;
-  --primary-color: #d32339;
+  --white-color:#ffffff;
+  --gray-color:#f8f8f8;
+  --primary-color: #ff6c00;
   --dark-color:#252525;
 
 

@@ -1,5 +1,5 @@
 
-
+/*GENERAL*/
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -9,10 +9,16 @@
   margin: 0px auto;
   max-width: var(--body-width);
 }
-.container-no-padding{
+.container-no-lf-padding{
   padding:var(--large-size) 0px;
   margin: 0px auto;
   max-width: var(--body-width);
+  width: 100%;
+}
+.container-no-padding{
+  margin: 0px auto;
+  max-width: var(--body-width);
+  width: 100%;
 }
 .small-container{
   padding:var(--medium-size) var(--medium-size);
@@ -32,43 +38,55 @@
 .gray-background{
   background-color: var(--gray-color);
 }
-
 .center{
   text-align: center;
 }
 .small-margin{
   margin-bottom: var(--small-size);
 }
-
-
-
+.primary-span{
+  color: var(--primary-color);
+}
 /*HEADER*/
 .header{
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
-
 /*HERO-BANNER*/
 .hero-banner{
-  min-height: 80vh;
-  background-color: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-
+.dark-span{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: var(--small-size);
+  margin-top: -1.5rem;
+}
 /*BOXES-SECTION*/
 .boxes{
   display: flex;
   width:100%
 }
-
+.small-icon{
+  vertical-align: middle;
+  margin-right: var(--medium-size);
+}
+/*CONTACT*/
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.border-top{
+  border-top:2px solid var(--primary-color);
+}
 /*FOOTER*/
 .footer-cr{
   font-size: 0.75rem;
 }
-
 .footer{
   padding: var(--small-size);
 }
-
 /*EXPERIENCE*/
 .experience-grid{
   display: grid;
@@ -79,7 +97,6 @@
   'div-4 div-4 div-3'
   'div-5 div-6 div-6';
 }
-
 .div-1{
   grid-area: div-1;
 }
@@ -98,24 +115,20 @@
 .div-6{
   grid-area: div-6;
 }
-
 .div-1, .div-2, .div-3, .div-4, .div-5, .div-6{
   background-color: var(--dark-color);
   color:var(--white-color);
   padding:var(--large-size);
   margin:var(--medium-size);
-
 }
-
 .light-background-span{
   background-color: var(--white-color);
   padding: var(--small-size);
 }
-
 .small-span{
   font-size: .85rem;
 }
-
+/*MOBILE*/
 @media (max-width: 768px){
   /*GENERAL*/
   .container{
@@ -140,5 +153,13 @@
   'div-4'
   'div-5'
   'div-6';
+}
+/*HERO-BANNER*/
+.hero-banner{
+  flex-direction: column;
+  text-align: center;
+}
+.profile-image{
+  width: 70%;
 }
 }
